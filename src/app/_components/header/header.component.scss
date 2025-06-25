@@ -1,0 +1,41 @@
+@use '../../../styles/variables' as *;
+
+.container {
+  width: 100%;
+  max-width: 504px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+.task-created, .task-completed {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $gray-300;
+  display: flex;
+  gap: 8px;
+}
+
+.task-created span, .task-completed span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.task-created span  {
+  background-color: $pink-light;
+  color: $pink-dark;
+  padding: 2px 8px;
+}
+
+.task-completed span {
+  background-color: $green-light;
+  color: $green-dark;
+  padding: 2px 8px;
+}

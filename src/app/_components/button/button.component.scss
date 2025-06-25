@@ -1,0 +1,33 @@
+@use '../../../styles/variables' as *;
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 504px;
+  height: 56px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: $gray-200;
+  color: $gray-400;
+  cursor: pointer;
+  border: none;
+  gap: 8px;
+}
+
+.custom-button i {
+    font-size: 20px;
+    background-color: $gray-200;
+    color: $pink-dark;
+}
+
+.custom-button:hover {
+  background-color: $pink-light;
+}
+
+.custom-button:hover i {
+  background-color: $pink-light;
+}
