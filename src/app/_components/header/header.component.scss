@@ -1,13 +1,12 @@
 @use '../../../styles/variables' as *;
 
-
-
 .task-container {
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
   margin-bottom: 12px;
 }
+
 .task-created, .task-completed {
   font-size: 14px;
   line-height: 20px;

@@ -16,12 +16,15 @@
   cursor: pointer;
   border: none;
   gap: 8px;
+  margin-bottom: 12px;
+  transition: 0.2s;
 }
 
 .custom-button i {
     font-size: 20px;
     background-color: $gray-200;
     color: $pink-dark;
+    transition: 0.2s;
 }
 
 .custom-button:hover {
