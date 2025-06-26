@@ -6,7 +6,7 @@ import { BaseUiComponent } from './_components/base-ui/base-ui.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, TaskComponent, BaseUiComponent],
+  imports: [HeaderComponent, TaskComponent, BaseUiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

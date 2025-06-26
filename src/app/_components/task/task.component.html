@@ -1,8 +1,10 @@
 <div class="task">
-  <button class="checkContainer">
-    <div></div>
+  <button class="checkContainer" (click)="toggleChecked()">
+    <div [ngClass]="{ checked: isChecked }">
+      <i *ngIf="isChecked" class="ph ph-check"></i>
+    </div>
   </button>
-  <p>fazer compras da semana aaaaaaaaaaaaaa</p>
+  <p>fazer compras da semana</p>
   <div>
     <button class="deleteButtonAndEdit">
       <i class="ph ph-trash"></i>

@@ -1,4 +1,4 @@
-@use '../../../styles/variables' as *;
+@use "../../../styles/variables" as *;
 
 .task {
   display: flex;
@@ -29,6 +29,19 @@
   background-color: none;
   border: none;
   cursor: pointer;
+
+  .checked {
+    background-color: $green-base;
+
+    i {
+      font-size: 15px;
+      font-weight: bold;
+      color: $white;
+    }
+  }
+  .checked:hover {
+    background-color: $green-dark;
+  }
 }
 
 .checkContainer div {
@@ -43,7 +56,6 @@
 .checkContainer div:hover {
   border: 2px solid $green-dark;
   background-color: rgba($green-dark, $alpha: 0.2);
-
 }
 
 .deleteButtonAndEdit {
