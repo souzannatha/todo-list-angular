@@ -12,6 +12,5 @@ export class TaskComponent {
 
   toggleChecked() {
     this.isChecked = !this.isChecked;
-    console.log('isChecked: ', this.isChecked);
   }
 }

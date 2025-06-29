@@ -4,13 +4,18 @@
       <i *ngIf="isChecked" class="ph ph-check"></i>
     </div>
   </button>
-  <p>fazer compras da semana</p>
-  <div>
+  <div class="task-text">
+    <p [ngClass]="{ textChecked: isChecked }">
+      Integer urna interdum massa libero auctor neque turpis turpis semper. Duis
+      vel sed fames integer.
+    </p>
+  </div>
+  <div class="task-actions">
     <button class="deleteButtonAndEdit">
       <i class="ph ph-trash"></i>
     </button>
     <button class="deleteButtonAndEdit">
-      <i class="ph ph-pencil-simple deleteButtonAndEdit"></i>
+      <i class="ph ph-pencil-simple"></i>
     </button>
   </div>
 </div>

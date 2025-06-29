@@ -1,0 +1,75 @@
+@use "../../../styles/variables" as *;
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 64px;
+  padding: 20px;
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: 8px;
+}
+
+.task-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $pink-base;
+  outline: none;
+  font-size: 14px;
+  color: $gray-400;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  caret-color: $pink-base;
+}
+
+.deleteButtonAndEdit {
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  background: none;
+  border-radius: 4px;
+  border: none;
+  color: $gray-300;
+  margin: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancel {
+  background-color: $gray-200;
+  color: $pink-base;
+  padding: 3px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.cancel:hover {
+  background-color: $pink-base;
+  color: $white;
+}
+
+.check {
+  background-color: $green-base;
+  color: $white;
+  padding: 3px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.check:hover {
+  background-color: $green-dark;
+}
+
+.task-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 4px;
+}
