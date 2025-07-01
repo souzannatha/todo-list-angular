@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
 
 @Component({
@@ -7,4 +7,10 @@ import { ButtonComponent } from '../button/button.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  @Input() totalTask:number = 0;
+  @Input() totalTasksCompleted:number = 0;
+
+
+}
+

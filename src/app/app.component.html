@@ -1,5 +1,9 @@
 <app-base-ui>
-  <app-header></app-header>
-  <app-task></app-task>
-  <app-task-input></app-task-input>
+  <app-header
+  [totalTask]="totalTask()"
+  [totalTasksCompleted]="totalTasksCompleted()"
+  ></app-header>
+  <div *ngFor="let task of Tasks">
+    <app-task [task]="task"></app-task>
+  </div>
 </app-base-ui>

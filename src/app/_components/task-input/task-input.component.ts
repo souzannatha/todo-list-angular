@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './task-input.component.scss'
 })
 export class TaskInputComponent {
-
 }
