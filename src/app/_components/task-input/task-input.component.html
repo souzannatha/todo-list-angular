@@ -1,12 +1,12 @@
 <div class="task">
   <div class="task-text">
-    <input type="text" class="input" />
+    <input type="text" class="input" [(ngModel)]="taskText" />
   </div>
   <div class="task-actions">
-    <button class="deleteButtonAndEdit">
+    <button class="deleteButtonAndEdit" (click)="onCancelClick()">
       <i class="ph ph-x cancel"></i>
     </button>
-    <button class="deleteButtonAndEdit">
+    <button class="deleteButtonAndEdit" (click)="onAddClick()">
       <i class="ph ph-check check"></i>
     </button>
   </div>

@@ -5,12 +5,17 @@
   <div class="task-container">
     <div class="task-created">
       <p>Tarefas criadas</p>
-      <span>{{totalTask}}</span>
+      <span>{{ totalTask }}</span>
     </div>
     <div class="task-completed">
       <p>Concluídas</p>
-      <span>{{totalTasksCompleted}}</span>
+      <span>{{ totalTasksCompleted }}</span>
     </div>
   </div>
-  <app-button></app-button>
+  <app-button (click)="onShowInput()" *ngIf="showTaskInput"></app-button>
+  <app-task-input
+    *ngIf="!showTaskInput"
+    (add)="onAddTask($event)"
+    (cancel)="onShowInput()"
+  ></app-task-input>
 </div>

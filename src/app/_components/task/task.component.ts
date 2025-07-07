@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Task } from '../../../interfaces/task';
 
 @Component({
@@ -10,6 +10,8 @@ import { Task } from '../../../interfaces/task';
 })
 export class TaskComponent implements OnInit {
   @Input() task!: Task;
+  @Output() remove = new EventEmitter<Task>();
+
   isChecked: boolean = false;
 
   ngOnInit(): void {
@@ -19,5 +21,9 @@ export class TaskComponent implements OnInit {
   toggleChecked() {
     this.isChecked = !this.isChecked;
     this.task.isCompleted = this.isChecked;
+  }
+
+  deleteTask() {
+    this.remove.emit(this.task);
   }
 }

@@ -6,11 +6,11 @@
   </button>
   <div class="task-text">
     <p [ngClass]="{ textChecked: isChecked }">
-      {{task.description}}
+      {{ task.description }}
     </p>
   </div>
   <div class="task-actions">
-    <button class="deleteButtonAndEdit">
+    <button class="deleteButtonAndEdit" (click)="deleteTask()">
       <i class="ph ph-trash"></i>
     </button>
     <button class="deleteButtonAndEdit">

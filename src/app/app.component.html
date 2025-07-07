@@ -1,9 +1,10 @@
 <app-base-ui>
   <app-header
-  [totalTask]="totalTask()"
-  [totalTasksCompleted]="totalTasksCompleted()"
+    [totalTask]="totalTask()"
+    [totalTasksCompleted]="totalTasksCompleted()"
+    (addTask)="addNewTask($event)"
   ></app-header>
-  <div *ngFor="let task of Tasks">
-    <app-task [task]="task"></app-task>
+  <div *ngFor="let task of task">
+    <app-task [task]="task" (remove)="removeTask($event)"></app-task>
   </div>
 </app-base-ui>
