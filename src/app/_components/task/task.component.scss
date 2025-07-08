@@ -85,3 +85,32 @@
 .deleteButtonAndEdit:hover {
   background-color: $gray-200;
 }
+
+.checkEdit:hover {
+  background: none;
+}
+
+.check {
+  background-color: $green-base;
+  color: $white;
+  padding: 3px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.check:hover {
+  background-color: $green-dark;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $pink-base;
+  outline: none;
+  font-size: 14px;
+  color: $gray-400;
+  background: transparent;
+  padding: 0;
+  margin: 0 0 8px 0;
+  caret-color: $pink-base;
+}

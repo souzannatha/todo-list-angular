@@ -12,11 +12,7 @@ import { Task } from '../interfaces/task';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  task: Task[] = [
-    { id: 1, description: 'Comprar pão', isCompleted: false },
-    { id: 2, description: 'Estudar Angular', isCompleted: true },
-    { id: 3, description: 'Fazer exercícios', isCompleted: false },
-  ];
+  task: Task[] = [];
 
   totalTask(): number {
     return this.task.length;
