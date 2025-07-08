@@ -15,7 +15,7 @@ export class HeaderComponent {
 
   @Output() addTask = new EventEmitter<string>();
 
-  showTaskInput: boolean = true;
+  showTaskInput: boolean = false;
 
   onShowInput() {
     this.showTaskInput = !this.showTaskInput;

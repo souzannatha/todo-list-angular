@@ -12,9 +12,9 @@
       <span>{{ totalTasksCompleted }}</span>
     </div>
   </div>
-  <app-button (click)="onShowInput()" *ngIf="showTaskInput"></app-button>
+  <app-button (click)="onShowInput()" *ngIf="!showTaskInput"></app-button>
   <app-task-input
-    *ngIf="!showTaskInput"
+    *ngIf="showTaskInput"
     (add)="onAddTask($event)"
     (cancel)="onShowInput()"
   ></app-task-input>
