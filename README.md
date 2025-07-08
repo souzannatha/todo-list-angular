@@ -1,59 +1,41 @@
-# TodoListAngular
+# 🚀 Desafio 01 - Todo List (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.2.
+Este projeto faz parte do meu desafio pessoal de **refazer os desafios da trilha de React da Rocketseat usando Angular**.
+O objetivo é dominar o Angular na prática, lidando com diferentes situações e componentes que envolvem interatividade e estruturação de aplicações reais.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📌 Descrição
+
+O desafio propõe criar uma aplicação de **lista de tarefas (todo list)**, onde o usuário pode:
+
+- Adicionar uma nova tarefa
+- Marcar/desmarcar uma tarefa como concluída
+- Remover uma tarefa
+- Ver o total de tarefas criadas e concluídas
+- Editar uma tarefa
+
+---
+
+## 🧠 O que eu aprendi com esse desafio
+
+- Criar e organizar componentes no Angular
+- Passar dados entre componentes com `@Input()`
+- Enviar eventos do filho para o pai com `@Output()` e `EventEmitter`
+- Usar `*ngIf` e `*ngFor` para renderizar e controlar elementos dinamicamente
+- Trabalhar com `[(ngModel)]` para capturar valores de inputs
+- Adicionar e remover itens de um array
+- Estilizar os componentes com SCSS e aplicar classes dinamicamente
+- Entender melhor a estrutura de um projeto Angular completo
+
+---
+
+## 📁 Como rodar o projeto
 
 ```bash
+# Instalar dependências
+npm install
+
+# Rodar o projeto localmente
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
